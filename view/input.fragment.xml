@@ -1,0 +1,16 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+
+    <Label text="Nome" />
+    <TextArea value="{dependenteModel>/dependente/nome}" width="100%" />
+   <Label text="Data de Nascimento" />
+    <DatePicker value="{dependenteModel>/dependente/dataNascimento}" />
+ <SegmentedButton selectedKey="{dependenteModel>/dependente/genero}" selectionChange="onSegmentedButtonSelect">
+        <items>
+            <SegmentedButtonItem text="Masculino" key="M" />
+            <SegmentedButtonItem text="Feminino" key="F" />
+        </items>   
+    </SegmentedButton>
+   <Label text="Altura" />
+    <Input value="{dependenteModel>/dependente/altura}" width="100%" type="Number" />
+</c:FragmentDefinition>

@@ -1,0 +1,20 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:form="sap.ui.layout.form">
+
+    <Dialog id="dialog">
+        <form:SimpleForm editable="true" layout="ResponsiveGridLayout">
+            <form:content>
+                <c:Title text="Dados do dependente" />
+                <c:Fragment fragmentName="dns.com.br.praticamodel1.view.input" />
+            </form:content>
+        </form:SimpleForm>
+        <beginButton>
+        <Button text="Salvar" icon="sap-icon://decline" type="Accept" press="onSave"/>
+        </beginButton>
+        <endButton>
+            <Button text="Fechar" icon="sap-icon://decline" type="Reject" press="onClosePopup"/>
+        </endButton>
+    </Dialog>
+
+</c:FragmentDefinition>

@@ -1,0 +1,36 @@
+<mvc:View controllerName="dns.com.br.praticamodel1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+         <headerContent>
+            <Button text="Cadastrar dependentes" type="Success" icon="sap-icon://person-placeholder" press="onOpenDialog"/>
+        </headerContent>
+<Table id="dependentesTable" items="{dependenteModel>/dependentes}">
+    <columns>
+        <Column>
+            <Text text="Nome" />
+        </Column>
+        <Column>
+            <Text text="Data de Nascimento" />
+        </Column>
+        <Column>
+            <Text text="Gênero" />
+        </Column>
+        <Column>
+            <Text text="Altura" />
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+            <cells>
+                <Text text="{dependenteModel>nome}" />
+                <Text text="{dependenteModel>dataNascimento}" />
+                <Text text="{dependenteModel>genero}" />
+                <Text text="{dependenteModel>altura}" />
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
+
+    </Page>
+</mvc:View>
